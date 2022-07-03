@@ -35,7 +35,7 @@ export class App extends Component {
       <Box color="black" pl={3} pr={3} m="32px auto" width={1}>
         <Section title="Please leave feedback">
           <FeedbackOptions
-            options={['good', 'neutral', 'bad']}
+            options={Object.keys(this.state)}
             onLeaveFeedback={this.feedbackIncrement}
           />
         </Section>
